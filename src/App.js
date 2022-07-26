@@ -37,7 +37,7 @@ function App() {
      {JSON.stringify(playerData) != '{}' ?
     <>
       <div className='container'>
-        <h5>Leageu of Legends Player Searcher</h5>
+        <h5>League of Legends Player Searcher</h5>
         <input onChange={ e => setSearchInput(e.target.value)} type="text"></input>
         <button onClick={e => searchForPlayerByName(e)} >Search Player</button>
       </div>
