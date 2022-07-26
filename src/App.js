@@ -25,7 +25,7 @@ function App() {
   function LandingPage() {
     return (
       <>
-      <h1>League Player Search:</h1>
+      <h1>League Player Search</h1>
       <input onChange={ e => setSearchInput(e.target.value)} type="text"></input>
       <button onClick={e => searchForPlayerByName(e)} >Search Player</button>
       </>
