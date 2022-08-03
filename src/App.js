@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import ProfileTopBar from './components/profileTopBar/ProfileTopBar';
 import LandingPage from './components/landingPage/LandingPage'
 import Profile from './components/profile/Profile';
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
 function App() {
 
@@ -10,15 +11,12 @@ function App() {
 
   return (
      <div className="App">
-    {JSON.stringify(playerData) != '{}' ?
-      <>
-      <Profile></Profile>
-      </> 
-      :
-      <>
-      <LandingPage></LandingPage>
-      </>
-      }
+      <Routes>
+          <Route path='/' element={<LandingPage/>}>
+          </Route>
+          <Route path='/profile' element={<Profile/>}>
+          </Route>
+      </Routes>
    </div>
   );
 }

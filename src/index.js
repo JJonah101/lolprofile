@@ -5,14 +5,17 @@ import App from './App';
 import store from './app/store'
 import { Provider } from 'react-redux'
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
-window.apiKey = "RGAPI-1cbb2250-d508-414a-bbb4-8825b94773b2";
+window.apiKey = "RGAPI-7b230626-aeff-482f-8d74-41604a1f723a";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <BrowserRouter>
     <Provider store={store}>
       <App />
     </Provider>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

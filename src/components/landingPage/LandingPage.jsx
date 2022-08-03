@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux'
 import {setInput} from '../../slicers/searchInputSlicer'
 import {setPlayerData} from '../../slicers/playerDataSlicer'
+import {BrowserRouter as Router, Link} from 'react-router-dom';
 
 
 export default function LandingPage() {
@@ -22,7 +23,9 @@ export default function LandingPage() {
     <>
      <h5>League of Legends Player Searcher Landing Page</h5>
        <input id='test' onChange={() => dispatch(setInput(document.getElementById('test').value))}></input>
+       <Link to="/profile">
         <button onClick={()=> searchForPlayerByName( )}>Test</button>
+       </Link>
     </>
   )
 }
