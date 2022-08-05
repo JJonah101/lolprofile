@@ -5,9 +5,9 @@ import App from './App';
 import store from './app/store'
 import { Provider } from 'react-redux'
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-window.apiKey = "RGAPI-7b230626-aeff-482f-8d74-41604a1f723a";
+window.apiKey = "RGAPI-5336bee1-28d1-4f9f-bcf0-a892e965d6b6";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
