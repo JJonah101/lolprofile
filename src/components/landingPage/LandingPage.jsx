@@ -22,6 +22,7 @@ export default function LandingPage() {
   return (
     <>
      <h5>League of Legends Player Searcher Landing Page</h5>
+     <img src='https://lh3.googleusercontent.com/blogger_img_proxy/ANbyha2v2F7OWIFcELRraGW9aDGy2gBIHyEqnXlJEu2te-jv_q_ttEUFJOlaD-P3F12JUdr03xXIDfNt3HD9ZtvGX4q4Okf24xvxKnMWZkzwRGzqqt6xun1mZu0z7mrADsyB79JTT4uILOvLuaQ9mzSAL6Q8=w919-h516-p-k-no-nu'></img>
        <input id='test' onChange={() => dispatch(setInput(document.getElementById('test').value))}></input>
        <Link to="/profile">
         <button onClick={()=> searchForPlayerByName( )}>Test</button>
