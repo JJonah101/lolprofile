@@ -1,0 +1,12 @@
+.wrapperProfileTopBar{
+    height: 63px;
+    width: 100%px;
+    background-color: #0acf83;
+}
+
+.headerButton{
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    margin-right: 20px;
+}

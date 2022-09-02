@@ -7,10 +7,10 @@ export default function Profile() {
 
 
   return (
-    <>
-     <ProfileTopBar></ProfileTopBar>
-     <ProfileSideBar></ProfileSideBar>
-     <ProfileMatchHistory></ProfileMatchHistory>
-    </>
+    <div className='profileDiv'>
+      <ProfileTopBar></ProfileTopBar>
+      <ProfileSideBar></ProfileSideBar>
+      <ProfileMatchHistory></ProfileMatchHistory>
+     </div>
   )
 }

@@ -7,7 +7,7 @@ import { Provider } from 'react-redux'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-window.apiKey = "RGAPI-dc7aabea-2be9-4811-8425-e3ef64d50e16";
+window.apiKey = "RGAPI-e4de8357-dfa3-40a9-9d7a-d9684794f483";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

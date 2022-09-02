@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import axios from 'axios';
+import './profileTopBar.css';
 import { useSelector, useDispatch } from 'react-redux'
 import {setInput} from '../../slicers/searchInputSlicer'
 import {setPlayerData} from '../../slicers/playerDataSlicer'
@@ -20,9 +21,15 @@ export default function ProfileTopBar() {
 
   return (
     <>
-      <h5>League of Legends Player Searcher Profile</h5>
+    <div className='wrapperProfileTopBar'>
+      <div>
+        <button className='headerButton'>test</button>
+        <button className='headerButton'>test2</button>
+      </div>
       <input id='test' onChange={() => dispatch(setInput(document.getElementById('test').value))}></input>
       <button onClick={()=> searchForPlayerByName( )}>Test</button>
+    </div>
+      
     </>
   )
 }
